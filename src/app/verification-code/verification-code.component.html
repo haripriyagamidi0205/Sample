@@ -1,0 +1,50 @@
+<div class="container">
+    <div *ngIf="!isDisplay">
+    <div class="card">
+        <div    
+         class="top-banner" >
+         <img src="../../assets/lockicon2.jpg" class="lock" >
+          <!-- <i class="fa fa-lock" aria-hidden="true"></i></div> -->
+        <div class="card-body">
+            <div class="forgot-text">
+                <h5 class="card-title" style="color: rgb(45, 85, 178); text-align: center; font-weight:400;">Verification Code</h5>
+          <p class="card-text">Please enter 6 digit verification code sent to your email. </p>
+            <div>
+                <input type="text" placeholder="Enter Code"  class="form-control">
+            </div>
+            <div><br>
+                <button type="button" class="btn btn-light">Cancel</button>&nbsp;
+          <button type="button" class="btn btn-primary show" (click)="onCodeSubmit()">
+            Submit</button>
+        </div>
+        </div>
+    </div>
+      </div>
+    </div>
+</div>
+<div *ngIf="isDisplay">
+    <div class="card">
+        <div    
+         class="top-banner" >
+         <img src="../../assets/lockicon2.jpg" class="lock" >
+          <!-- <i class="fa fa-lock" aria-hidden="true"></i></div> -->
+        <div class="card-body">
+            <div class="forgot-text">
+                <h5 class="card-title" style="color: rgb(45, 85, 178); text-align: center; font-weight:400;">Password</h5>
+          <p class="card-text" style="text-align: center;">Please enter a new password. </p>
+            <div>
+                <input type="text" placeholder="New password"  class="form-control">
+            </div>
+            <div><br>
+                <button type="button" class="btn btn-light">Cancel</button>&nbsp;
+          <button type="button" class="btn btn-primary show" >
+            Submit</button>
+        </div>
+        </div>
+    </div>
+      </div>
+    </div>
+</div>
+    </div>
+    
+
